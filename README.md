@@ -37,7 +37,7 @@ Mobile
 
 🚀 Como executar o projeto
 Clone o repositório:
-git clone https://github.com/seu-usuario/urbanexpress-landing-page.git
+git clone https://github.com/Caua-env/urbanExpress
 Abra o arquivo:
 index.html
 
