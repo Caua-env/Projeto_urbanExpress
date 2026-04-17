@@ -34,9 +34,6 @@ Desktop
 Tablet
 Mobile
 
-📸 Preview
-
-(Adicionar aqui um print do projeto depois)
 
 🚀 Como executar o projeto
 Clone o repositório:
