@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanExpress</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/medias_queries.css">
+    <link rel="stylesheet" href="src/styles/animacoes.css">
+    <!-- Hero -->
+    <!-- Beneficios -->
+    <!-- Como funciona -->
+    <!-- Como funciona -->
+    <!-- Cta -->
+    <!-- prova social -->
+    <!-- rodape -->
+</head>
+<body>
+    <header>
+        <nav class="content-header">
+            <img alt="UrbanExpress" class="logo_express"/>
+
+            <button class="menu-toggle">☰</button>
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Como Funciona</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Entrega rápida e segura para sua cidade</h1>
+                <p>Receba qualquer produto em até 1 hora, sem complicação</p>
+
+                <button class="hero-botao" type="button">Confira já</button>
+            </div>
+            <div class="hero-image">
+                <img src="src/pictures/img-hero.jpg" alt="Imagem de um entregador transportando a encomenda">
+            </div>
+        </div>
+    </div>
+
+    <div class="beneficios-container">
+        <h1>Por que escolher a UrbanExpress?</h1>
+        <div class="beneficio-content">
+            <div class="beneficio-card">
+                <img src="src/icons/delivery-truck.png" alt="icone 1">
+                <h2>Entrega em até 1 hora</h2>
+                <p>Receba seus produtos com rapidez e segurança.</p>
+            </div>
+
+            <div class="beneficio-card">
+                <img src="src/icons/pin.png" alt="icone 2">
+                <h2>Rastreamento em tempo real</h2>
+                <p>Acompanhe sua entrega do início ao fim.</p>
+            </div>
+
+            <div class="beneficio-card">
+                <img src="src/icons/icons8-frente-do-cartão-de-crédito-50.png" alt="icone 3">
+                <h2>Pagamento seguro</h2>
+                <p>Diversas formas de pagamento com total segurança.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="como-funciona-container">
+        <h1>Como Funciona?</h1>
+
+        <div class="fluxo">
+
+            <div class="etapa">
+                <div class="circulo">1</div>
+                <h2>Faça seu pedido</h2>
+                <p>Informe o que precisa enviar ou receber rapidamente.</p>
+            </div>
+
+            <div class="linha"></div>
+
+            <div class="etapa">
+                <div class="circulo">2</div>
+                <h2>Nós coletamos</h2>
+                <p>Um entregador vai até o local indicado.</p>
+            </div>
+
+            <div class="linha"></div>
+
+            <div class="etapa">
+                <div class="circulo">3</div>
+                <h2>Receba na sua porta</h2>
+                <p>Entrega rápida e segura no destino.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="prova-social-container">
+        <h1>Por que nossos clientes confiam na gente?</h1>
+
+        <div class="stats">
+            <div class="stat">
+                <h2>4.8/5</h2>
+                <p>Avaliação média</p>
+            </div>
+
+            <div class="stat">
+                <h2>+1500</h2>
+                <p>Entregas realizadas</p>
+            </div>
+
+            <div class="stat">
+                <h2>8.2/10</h2>
+                <p>Satisfação dos clientes</p>
+            </div>
+        </div>
+
+        <div class="depoimentos">
+            <div class="depoimento">
+                <p>"Entrega super rápida, chegou antes do esperado. Recomendo muito!"</p>
+                <h3>João Silva</h3>
+            </div>
+
+            <div class="depoimento">
+                <p>"Serviço confiável e fácil de usar. Com certeza usarei novamente."</p>
+                <h3>Maria Oliveira</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-container">
+        <div class="cta-content">
+            <h1>Não perca tempo com entregas demoradas</h1>
+            <p>Solicite agora e receba seu pedido em até 1 hora com total segurança.</p>
+
+            <button class="cta-botao">Fazer um orçamento</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                <h2>UrbanExpress</h2>
+                <p>Entrega rápida e segura na sua cidade.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Como funciona</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contato">
+                <h3>Contato</h3>
+                <p>Email: contato@urbanexpress.com</p>
+                <p>Telefone: (22) 99999-9999</p>
+            </div>
+
+            <div class="footer-redes">
+                <h3>Redes</h3>
+                <p>Instagram</p>
+                <p>Facebook</p>
+                <p>WhatsApp</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 UrbanExpress. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+<script>
+    // script para a responsividade do menu
+    const btn = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".content-header ul");
+
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("active");
+});
+</script>
