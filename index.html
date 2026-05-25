@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="src/styles/medias_queries.css">
     <link rel="stylesheet" href="src/styles/animacoes.css">
+    <link rel="stylesheet" href="src/styles/popUp.css">
     <!-- Hero -->
     <!-- Beneficios -->
     <!-- Como funciona -->
@@ -18,7 +19,7 @@
 <body>
     <header>
         <nav class="content-header">
-            <img alt="UrbanExpress" class="logo_express"/>
+            <img alt="Logo da UrbanExpress" class="logo_express"/>
 
             <button class="menu-toggle">☰</button>
             <ul>
@@ -34,7 +35,8 @@
                 <h1>Entrega rápida e segura para sua cidade</h1>
                 <p>Receba qualquer produto em até 1 hora, sem complicação</p>
 
-                <button class="hero-botao" type="button">Confira já</button>
+                <button class="hero-botao openPopUp" type="button">Confira já</button>
+
             </div>
             <div class="hero-image">
                 <img src="src/pictures/img-hero.jpg" alt="Imagem de um entregador transportando a encomenda">
@@ -133,7 +135,7 @@
             <h1>Não perca tempo com entregas demoradas</h1>
             <p>Solicite agora e receba seu pedido em até 1 hora com total segurança.</p>
 
-            <button class="cta-botao">Fazer um orçamento</button>
+            <button class="cta-botao openPopUp" type="button">Fazer um orçamento</button>
         </div>
     </div>
 
@@ -174,6 +176,22 @@
         </div>
     </footer>
 
+    <div id="myPopUp" class="popup-container">
+        <div class="popup-content">
+            <button id="closePopUp" class="btn-fechar-popUp">
+                X
+            </button>
+                <h2>Solicite seu orçamento</h2>
+                <p>Informe seus dados e nossa equipe entrará em contato.</p>
+                <form method="post" class="form-container" name="form-orcamento">
+                    <label class="label-popUp" for="input-nome">Nome:</label> <input type="text" id="input-nome" class="input-popUp" placeholder="Beckham">
+                    <label class="label-popUp" for="input-tel">Telefone:</label> <input type="text" id="input-tel" class="input-popUp" placeholder="2299873422">
+                    <label class="label-popUp" for="input-email">Email:</label> <input type="email" id="input-email" class="input-popUp" placeholder="malito@mail.com">
+                    <textarea name="descricao" class="descricao-popUp" placeholder="Detalhe aqui sobre o seu orçamento"></textarea>
+                </form>
+        </div>
+    </div>
+
 </body>
 </html>
 
@@ -185,4 +203,21 @@
     btn.addEventListener("click", () => {
         menu.classList.toggle("active");
 });
+
+    const btnOpen = document.querySelectorAll(".openPopUp")
+    const btnClose = document.querySelector("#closePopUp")
+    const popUp = document.querySelector("#myPopUp")
+
+    
+    btnOpen.forEach((botao) => {
+        botao.addEventListener('click', (e) => {
+            popUp.classList.add("show")
+        })
+    })
+
+    btnClose.addEventListener('click', (e) => {
+        popUp.classList.remove("show")
+    })
+
+
 </script>

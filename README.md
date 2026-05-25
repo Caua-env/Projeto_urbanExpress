@@ -41,12 +41,6 @@ git clone https://github.com/Caua-env/urbanExpress
 Abra o arquivo:
 index.html
 
-💡 Melhorias futuras
-Adicionar animações mais avançadas
-Melhorar acessibilidade
-Implementar versão com JavaScript
-Integração com backend (futuramente)
-
 👨‍💻 Autor
 
 Desenvolvido por Cauã

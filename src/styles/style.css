@@ -131,13 +131,14 @@ img {
 }
 
 .hero-botao {
-    background: #00c2ff;
     color: #000;
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
 .hero-text .hero-botao {
+    background-color: #ff3c3c;
+
     font-size: 2.1rem;
     width: auto;
     height: auto;

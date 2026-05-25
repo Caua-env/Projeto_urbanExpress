@@ -8,7 +8,7 @@
 
     width: 0%;
     height: 2px;
-    background: #00c2ff;
+    background: #ff3c3c;
 
     transition: width 0.3s ease;
 }
@@ -44,14 +44,16 @@
 }
 
 .hero-botao {
-    background: #00c2ff;
-    color: #000;
+    background: #c0392b;  /*#ff3c3c */
+    color: #f9f9f9;
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
 .hero-botao:hover {
-    background: #00a6d6;
+    /* background: #fff; */
+    filter: brightness(0.75);
+    color: #000;
     transform: scale(1.05);
 }
 

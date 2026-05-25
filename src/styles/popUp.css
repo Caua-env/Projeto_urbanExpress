@@ -1,0 +1,115 @@
+/* estilo do PopUp do formulário */
+
+.popup-container {
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 9999; 
+}
+
+.popup-content {
+    /* background-color: #F3F2ED; */
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+
+
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+    
+    /* Configuração de tamanho exigida */
+    width: 500px;
+    height: 600px;
+    color: #fff;
+    
+    /* Garante que o pop-up encolha em telas menores (celulares) */
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto; /* Adiciona barra de rolagem interna se o conteúdo for maior que 500px */
+
+    /* Centralização matemática exata */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    
+    /* Organização do conteúdo interno */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-fechar-popUp{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+    width: 6rem;
+    height: 6rem;
+
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: #F3F2ED;
+}
+
+.popup-container.show {
+    display: flex;
+}
+
+/* Estilos dos componentes do formulario do PopUp */
+
+.form-container {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    margin: 0 auto;
+
+    gap: 0.5rem;
+    align-items: center;
+    justify-items: center;
+
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+}
+
+.label-popUp {
+    font-weight: bold;
+    display: flex;
+    align-self: center;
+}
+
+.input-popUp {
+    width: 90%;
+    font-size: 1.5rem;
+    height: 3rem;
+    padding: 0.8rem;
+
+}
+
+.descricao-popUp {
+    grid-column: 1 / span 2; /* ocupa as duas colunas (label + input) */
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    width: 100%;
+    height: 10rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
